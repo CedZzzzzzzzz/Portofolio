@@ -174,3 +174,131 @@ body {
 .h-icons a:hover:before {
     width: 100%;
 }
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .nav_bar {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .email {
+        margin: 20px 0 0 0;
+        padding: 6px 12px;
+        font-size: 18px;
+    }
+
+    .home {
+        padding: 0 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .h-content h1 {
+        font-size: 40px;
+    }
+
+    .h-content h3 {
+        font-size: 24px;
+    }
+
+    .h-content p {
+        font-size: 14px;
+    }
+
+    .image {
+        width: 90%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .image img {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .h-icons {
+        width: 150px;
+        bottom: 20px;
+    }
+
+    .h-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 18px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 26px;
+        margin-left: 20px;
+    }
+
+    .nav_bar {
+        gap: 30px;
+    }
+
+    .home {
+        padding: 0 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .h-content h1 {
+        font-size: 45px;
+    }
+
+    .h-content h3 {
+        font-size: 28px;
+    }
+
+    .h-content p {
+        font-size: 15px;
+    }
+
+    .image {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 80%;
+        margin: 40px 0;
+    }
+
+    .h-icons {
+        width: 160px;
+        bottom: 40px;
+    }
+
+    .h-icons a {
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
+    }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1025px) {
+    /* Keep the current styles as they are; this is your default desktop view */
+}
