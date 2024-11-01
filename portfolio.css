@@ -12,18 +12,17 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     width: 100%;
-    padding: 20px;
+    padding: 20px 100px;
     background: rgba(253, 251, 212, 0.8); 
     backdrop-filter: blur(10px); 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .logo {
-    margin: 0 0 0 50px;
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
@@ -72,24 +71,6 @@ body {
 .nav_bar a:hover::after {
     width: 100%;
 }
-.email {
-    margin: 0 50px 0 0;
-    font-size: 20px;
-    color: #0C0C0C;
-    text-decoration: none;
-    padding: 8px 16px;
-    border: 1px solid #0C0C0C;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.7); 
-    transition: background-color 0.3s, color 0.3s;
-}
-.email:hover {
-    background-color: #0F0F75;
-    color: #FFFFFF;
-}
-.email, .nav_bar a {
-    cursor: pointer;
-}
 
 .home {
     display: flex;
@@ -99,6 +80,7 @@ body {
     padding: 0 0 0 5rem;
 }
 .h-content {
+    padding-left: 10px;
     max-width: 500px;
 }
 @keyframes fadeIn {
@@ -144,6 +126,7 @@ body {
     position: absolute;
     bottom: 80px;
     width: 180px;
+    margin-left: 10px;
 }
 .h-icons a {
     position: relative;
@@ -175,130 +158,24 @@ body {
     width: 100%;
 }
 
-/* Mobile phones */
-@media (max-width: 768px) {
-    .header {
-        padding: 15px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        margin: 0;
-        font-size: 24px;
-    }
-
-    .nav_bar {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 10px;
-    }
-
-    .email {
-        margin: 20px 0 0 0;
-        padding: 6px 12px;
-        font-size: 18px;
-    }
-
-    .home {
-        padding: 0 20px;
-        text-align: center;
-        flex-direction: column;
-    }
-
+@media screen and (max-width: 1024px) {
+    
     .h-content h1 {
-        font-size: 40px;
+       font-size: 50px;
     }
-
     .h-content h3 {
-        font-size: 24px;
+        font-size: 30px;
     }
-
     .h-content p {
-        font-size: 14px;
+        font-size: 13px;
     }
-
     .image {
-        width: 90%;
-        max-width: 100%;
-        margin: 20px 0;
+        width: 100%;
     }
-
     .image img {
-        width: 90%;
-        margin: 20px 0;
+        width: 420px;
     }
-
     .h-icons {
-        width: 150px;
-        bottom: 20px;
+        margin-bottom: 30px;
     }
-
-    .h-icons a {
-        width: 35px;
-        height: 35px;
-        font-size: 22px;
-    }
-}
-
-/* Tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .header {
-        padding: 18px;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 26px;
-        margin-left: 20px;
-    }
-
-    .nav_bar {
-        gap: 30px;
-    }
-
-    .home {
-        padding: 0 30px;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .h-content h1 {
-        font-size: 45px;
-    }
-
-    .h-content h3 {
-        font-size: 28px;
-    }
-
-    .h-content p {
-        font-size: 15px;
-    }
-
-    .image {
-        width: 80%;
-        max-width: 100%;
-    }
-
-    .image img {
-        width: 80%;
-        margin: 40px 0;
-    }
-
-    .h-icons {
-        width: 160px;
-        bottom: 40px;
-    }
-
-    .h-icons a {
-        width: 38px;
-        height: 38px;
-        font-size: 24px;
-    }
-}
-
-/* Large screens (desktop) */
-@media (min-width: 1025px) {
-    /* Keep the current styles as they are; this is your default desktop view */
 }
